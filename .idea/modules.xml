@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TragamonedasDisc.iml" filepath="$PROJECT_DIR$/.idea/modules/TragamonedasDisc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TragamonedasDisc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TragamonedasDisc_main.iml" group="TragamonedasDisc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TragamonedasDisc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TragamonedasDisc_test.iml" group="TragamonedasDisc" />
+    </modules>
+  </component>
+</project>
