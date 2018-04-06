@@ -58,7 +58,7 @@ public class Tragamonedas {
     }
 
     //Dependiendo del estado de la maquina tragamonedas, termina el juego y muestra el mensaje correspondiente.
-    public void terminar(){
+    private void terminar(){
 
         switch (this.estado){
             case SALIR:
@@ -99,7 +99,7 @@ public class Tragamonedas {
     }
 
     //Metodo que muestra por pantalla los valores de las ruedas en el formato requerido.
-    public void mostrarRuedas(){
+    private void mostrarRuedas(){   //Puede ser publico si se quiere utilizar desde el main.
         String lineaSeparadora = "-";
         String valoresRuedas = "|";
 
@@ -122,13 +122,17 @@ public class Tragamonedas {
     }
 
     //Metodo que permite actualizar los valores de las ruedas.
-    public void girarRuedas(){
+    private void girarRuedas(){
+        //Puede ser publico, pero, en este caso, es un metodo interno que
+        //se realiza solo despues de ingresar la apuesta; Por lo tanto es
+        //un metodo privado.
+
         for (Rueda r : ruedas)
             r.girarRueda();
     }
 
     //Funcion que calcula y retorna el premio a recibir segun las reglas.
-    public int calcularPremio(int apuesta){
+    private int calcularPremio(int apuesta){
 
         int premio = 0;
         int[] nums = new int[numRuedas];
@@ -139,7 +143,6 @@ public class Tragamonedas {
             if (nums[i] == 0)
                 cantidadEstrellas++;
         }
-
 
         switch (cantidadEstrellas){
             case 0:
